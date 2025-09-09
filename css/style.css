@@ -1355,3 +1355,28 @@ textarea.input-field {
   height: 100%;
   object-fit: cover;  /* Cover entire section */
 }
+
+/* Default (Desktop & Tablet) */
+.hero-banner {
+  width: 100%;
+  height: 100vh;     /* Full screen height */
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill hero area */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 60vh; /* Reduce height for mobile */
+  }
+
+  .hero-banner img {
+    object-fit: contain; /* Show full image without cutting */
+  }
+}
+
